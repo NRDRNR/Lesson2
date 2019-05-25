@@ -1,10 +1,10 @@
-age = input ("Введите возраст")
+age = input ("Введите возраст: ")
 
-age = int(abs(age))
+age = abs(int(age))
 
 print(age)
 
-if age < 18
+if age < 18:
     print("Сначала школу закончи)")
 else:
     print("Сигареты? Какие такие сигареты?")
