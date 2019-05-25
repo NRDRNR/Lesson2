@@ -14,13 +14,26 @@
   и выводя на экран результаты
 
 """
-
 def main():
     """
     Эта функция вызывается автоматически при запуске скрипта в консоли
     В ней надо заменить pass на ваш код
     """
-    pass
+    a = input('Введите первую строку ')
+    b = input('Введите вторую строку ')
+
+    if type(a)==str and type(b)==str :
+        if len(a)==len(b):
+            return(1)
+        elif len(a) > len(b):
+            return(2)
+        elif len(a) != len(b) and b == 'learn':
+            return(3)
+    else:
+        return ('Ошибка')
     
+
+compare = main()
+
 if __name__ == "__main__":
-    main()
+    print(compare)
