@@ -16,10 +16,23 @@
 """
 
 def ask_user():
-    """
-    Замените pass на ваш код
-    """
-    pass
+    dialog = {'Как дела?': 'Хорошо!', 'Что делаешь?': 'Программирую'}
     
+    def ask_user_dict():
+
+        user_say = input()
+        while True:
+            if user_say == dialog.items:
+                print(1)
+                ask_user_dict()
+            else:
+                print('Не знаю')
+                ask_user_dict()
+
+
+    ask_user_dict()
+
 if __name__ == "__main__":
     ask_user()
+    
+
