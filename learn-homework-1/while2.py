@@ -20,7 +20,7 @@ def ask_user():
     
     def ask_user_dict():
 
-        user_say = input()
+        user_say = input('Введите вопрос ')
        
         while True:
             if user_say in dialog.keys():
