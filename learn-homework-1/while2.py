@@ -18,26 +18,19 @@
 def ask_user():
     dialog = {'Как дела?': 'Хорошо!', 'Что делаешь?': 'Программирую'}
 
-    def ask_user_dict(x):
-        user_say = input('Введите вопрос ')
-        while x<10:
-            if user_say in dialog.keys():
-                print(dialog.get(user_say))
-                x+=1
-                ask_user_dict(x)
-            else:
-                print('Не знаю')
-                x = x+1
-                print(x)
-                ask_user_dict(x)
+    user_say = input('Введите вопрос ')
+    
+    if user_say in dialog.keys():
+        print(dialog.get(user_say))
+            
+    else:
+        print('Не знаю')
+            
                 
-    x=1
-    ask_user_dict(x)
-
-
 
 
 if __name__ == "__main__":
-    ask_user()
+    while True:
+        ask_user()
     
 
