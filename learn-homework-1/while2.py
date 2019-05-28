@@ -21,9 +21,10 @@ def ask_user():
     def ask_user_dict():
 
         user_say = input()
+       
         while True:
-            if user_say == dialog.items:
-                print(1)
+            if user_say in dialog.keys():
+                print(dialog.get(user_say))
                 ask_user_dict()
             else:
                 print('Не знаю')
